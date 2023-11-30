@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Giants BarberShop</title>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/bootstrap.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="text">
+        <h1>The Giants BarberShop</h1>
+      </div>
+      <button
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#appointment"
+        class="product-btn"
+      >
+        Book Appointment
+      </button>
+    </header>
+
+    <!--Main-->
+
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/classic.PNG"
+            class="card-img-top"
+            alt="card-grid-image"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Classic haircut</h2>
+            <p class="card-text">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#appointment"
+                class="product-btn"
+              >
+                Book Appointment
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/beard.PNG"
+            class="card-img-top"
+            alt="card-grid-image"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Beard</h2>
+            <p class="card-text">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#appointment"
+                class="product-btn"
+              >
+                Book Appointment
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/modern.jpg"
+            class="card-img-top"
+            alt="card-grid-image"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Modern haircut</h2>
+            <p class="card-text">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#appointment"
+                class="product-btn"
+              >
+                Book Appointment
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/combo.png"
+            class="card-img-top"
+            alt="card-grid-image"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Classic/Mordern haircut + beard</h2>
+            <p class="card-text">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#appointment"
+                class="product-btn"
+              >
+                Book Appointment
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal form-->
+    <form class="form">
+      <div class="modal" tabindex="-1" id="appointment">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="modalVerticallyCenteredLabel">
+                Appointment
+              </h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <input
+                type="text"
+                class="form-control name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                class="form-control lastname"
+                placeholder="Lastname"
+                required
+              />
+              <input
+                type="email"
+                class="form-control email"
+                placeholder="E-mail"
+                required
+              />
+              <select class="form-select" aria-label="Default select" required>
+                <option selected="">Open this select menu</option>
+                <option value="1">Classic haircut</option>
+                <option value="2">Beard</option>
+                <option value="3">Modern haircut</option>
+                <option value="4">Classic/Modern haircut + beard</option>
+              </select>
+              <input type="date" class="form-control date" required />
+              <input type="time" class="form-control time" required />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="form-btn cancel-btn">Cancel</button>
+              <button type="button" class="form-btn book-btn">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

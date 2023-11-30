@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(220, 220, 220, 0.8),
+      rgba(220, 220, 220, 0.8)
+    ),
+    url(../img/1.jpg);
+  background-size: cover;
+  background-position: top;
+  /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text h1 {
+  color: black;
+  font-family: Titillium Web;
+  font-size: 4rem;
+}
+
+.product-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: whitesmoke;
+  border: solid 3px #a08250;
+  width: 10rem;
+  height: 2.5rem;
+  color: black;
+  font-family: Titillium Web;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.row {
+  padding-top: 30px;
+}
+.col .card {
+  width: 24rem;
+  margin: auto;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(220, 220, 220, 0.8);
+}
+
+.card img {
+  width: 24rem;
+  height: 16rem;
+}
+
+.card h2 {
+  font-family: Titillium Web;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+}
+
+.modal-header {
+  background-color: #a08250;
+}
+
+.modal-title {
+  font-family: Titillium Web;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.modal-body .form-control,
+.form-select {
+  border: solid 3px #a08250;
+  margin: 1rem;
+  width: 28rem;
+}
+
+.modal-footer .form-btn {
+  text-align: center;
+  background-color: whitesmoke;
+  border: solid 3px #a08250;
+  width: 10rem;
+  height: 2.5rem;
+  color: black;
+  font-family: Titillium Web;
+  font-weight: bold;
+  font-size: medium;
+}
